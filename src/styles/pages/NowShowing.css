@@ -1,0 +1,48 @@
+.grid-card {
+  transition: 500ms linear;
+  box-shadow: 4px 6px 12px -2px rgba(77, 77, 78, 0.53);
+  margin: 40px;
+}
+.grid-card:hover {
+  transform: scale(1.1);
+}
+.grid-container img {
+  width: 306px;
+  height: 366px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+.grid-content {
+  width: 70%;
+}
+.grid-card-details {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin: 20px;
+}
+
+.grid-card-details p {
+  font-weight: bold;
+  /* font-size: 16px; */
+}
+
+.grid-movie-info {
+  line-height: 1.8;
+}
+.grid-movie-info p {
+  width: 180px;
+}
+@media all and (-ms-high-contrast: none) {
+  .grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(3, auto);
+    -ms-grid-rows: repeat(3, auto);
+  }
+}
